@@ -29,11 +29,20 @@
             // document.getElementById("current-deposit").innerText = updatedDeposit;
 
 
+            if(depositNumber <0){
+                alert("Negative number is not allowed");
+            }
+            else{
             updateAmount('current-deposit', depositNumber);
 
             updateAmount('current-balance', depositNumber);
 
             document.getElementById("deposit-amount").value = "";
+
+            }
+
+
+            
 
         })
 
